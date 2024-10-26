@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slider {
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+@keyframes fade {
+    0%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+    
+
+img{
+    width:100%;
+    height:100%;
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;   
+    animation: fade 12s ease-in-out infinite alternate;
+}
+
+img:nth-child(1){
+    animation-delay: 0s;
+}
+img:nth-child(2){
+    animation-delay: 3s;
+}
+img:nth-child(3){
+    animation-delay: 6s;
+}
+img:nth-child(4){
+    animation-delay: 9s;
+}
+    </style>
+</head>
+<body>
+    <section>
+        <div class="slider">
+            <img src="./Images/1.INDUSTRY.jpg" >
+            <img src="./Images/2.INDUSTRY.jpg" >
+            <img src="./Images/3.INDUSTRY.jpg" >
+            <img src="./Images/4.INDUSTRY.jpg" >
+     </div>
+        </section>
+</body>
+</html>
